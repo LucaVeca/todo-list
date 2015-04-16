@@ -1,5 +1,5 @@
-@import "css/reset.css";
-@import "css/normalize.css";
+@import "reset.css";
+@import "normalize.css";
 
 body{
 	background: url(images/perfection.jpg) no-repeat center center fixed; 

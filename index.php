@@ -26,7 +26,7 @@
 
 	function add_task(){
 			$('.add-new-task').submit(function(){
-				var new_task = $('.add-new-task input[name=new-task').val();
+				var new_task = $('.add-new-task input[name=new-task]').val();
 
 				if (new_task != '') {
 					$.post('includes/add-task.php', {task: new_task}, function(data){
