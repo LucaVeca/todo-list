@@ -2,7 +2,7 @@
 @import "normalize.css";
 
 body{
-	background: url(images/perfection.jpg) no-repeat center center fixed; 
+	background: url(../images/boardwalk.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -16,8 +16,8 @@ body{
 
 .task-list{
 	width: 1200px;
-	min-height: 210px;
-	background-color: black;
+	min-height: 130px;
+	background-color: white;
 	padding-top: 235px;
 	padding: 22px 6%;
 	opacity: .5;
@@ -28,13 +28,14 @@ body{
 	text-align: center;
 	margin-left: 510px;
 	margin-top: 15px;
-	height: 90px;
+	height: 60px;
 }
 
 .title{
-	margin-top: 80px;
-	padding-bottom: 70px;
+	margin-top: 20px;
+	padding-bottom: 15px;
 	text-align: center;
 	margin-right: 40px;
 	font-family: 'Oswald', sans-serif;
+	color: white;
 }

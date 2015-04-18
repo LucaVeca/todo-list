@@ -3,6 +3,8 @@
 <head>
 	<title> Simple To-Do List </title>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 </head>
 <body>
@@ -40,7 +42,7 @@
 	</form>
 	</div>	
 </body>
-<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="https://code.jquery.com/jquery-latest.min.js"></script>
 <script>
 	add_task();//calling the add task function
 
@@ -49,7 +51,7 @@
 				var new_task = $('.add-new-task input[name=new-task]').val();
 
 				if (new_task != '') {
-					$.post('includes/add-task.php', {task: new_task}, function(data){
+					$.post('includes/add-tasks.php', {task: new_task}, function(data){
 						$('add-new-task input[name=new-task]').val();
 						$(data).appendTo('task-list ul').hide().fadeIn();
 					});
